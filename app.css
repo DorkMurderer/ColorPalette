@@ -1,0 +1,92 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(189, 195, 201);
+}
+
+.container {
+margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .color{
+    list-style: none;
+    cursor: pointer;
+    margin: 13px;
+    padding: 7px;
+    border-radius: 6px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.container .color:active{
+    transform: scale(0.95)
+}
+
+.color:hover .react-box{
+  filter:brightness(106%)
+}
+
+.color .react-box{
+     width: 185px;
+     height: 188px;
+     border-radius: 5px;
+     background: #8A6CFF;
+}
+
+.color .hex-value{
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.refresh-btn{
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    outline: none;
+    cursor: pointer;
+    font-family: 1.1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    color: aliceblue;
+    padding: 12px 20px;
+    background: #8A6CFF; 
+    box-shadow: 0 20px 25px rgba(52, 87, 220, 0.3);
+    border: 2px solid aliceblue;
+    transform: translateX(-50%);
+
+}
+
+
+@media screen and (max-width: 510){
+    .container{
+        margin: 10px;
+    }
+    .container .color{
+        margin: 8px;
+        padding: 5px;
+    }
+    .color .react-box{
+        width: 145px;
+        height: 148px;
+    }
+
+    .color .hex-value{
+        font-size: 1.05rem
+    }
+}
